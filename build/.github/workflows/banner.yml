@@ -1,0 +1,39 @@
+name: Generate Hero Banner
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "profile.json"
+      - "photo.jpg"
+      - ".github/scripts/generate_banner.py"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Pillow
+        run: pip install Pillow
+
+      - name: Generate dark.svg / light.svg
+        run: python3 .github/scripts/generate_banner.py profile.json photo.jpg .
+
+      - name: Commit updated banners
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dark.svg light.svg
+          git diff --staged --quiet || git commit -m "Regenerate hero banner [skip ci]"
+          git push

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Street-racer",
+    "repo": "Aarav200/Street-racer",
+    "logo": "",
+    "description": "A 2D WebGL game that lets you experience the thrill of chasing",
+    "tags": ["JavaScript", "WebGL", "GameDev"]
+  },
+  {
+    "name": "JarvisAi-agent",
+    "repo": "Aarav200/JarvisAi-agent-",
+    "logo": "",
+    "description": "An agent that runs locally on your desktop and can do your daily tasks",
+    "tags": ["Python", "Agentic AI"]
+  },
+  {
+    "name": "Coin Rush: City Drive",
+    "repo": "Aarav200/coin-rush-city-drive",
+    "logo": "",
+    "description": "Arcade 3D driving game — golden-hour city streets, dodge traffic, collect coins",
+    "tags": ["Three.js", "JavaScript", "GameDev"]
+  }
+]

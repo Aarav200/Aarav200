@@ -1,0 +1,23 @@
+{
+  "name": "Aarav Chawla",
+  "email": "aaravchawla280@gmail.com",
+  "info_lines": [
+    ["Subject", "Aarav Chawla"],
+    ["Role", "Game Developer & Agentic AI Developer"],
+    ["Origin", "Bangalore, India"],
+    ["Status", "Building + Shipping + Training agents"],
+    ["ToolChain", "VS Code, Git, Blender, Unity Hub"],
+    ["Core.Engines", "Unity, Unreal, Godot"],
+    ["Core.Lang", "C#, C++, Python, Rust"],
+    ["Core.AI/Agents", "LangChain, LangGraph, OpenAI, Claude"],
+    ["Core.Infra", "Docker, AWS, Vercel, Git"]
+  ],
+  "contact_lines": [
+    ["Grid.Portfolio", "loxstudios.netlify.app"],
+    ["Grid.LinkedIn", "aarav-chawla-"],
+    ["Grid.GitHub", "@Aarav200"],
+    ["Grid.Instagram", "@zogratiscodes"],
+    ["Grid.X", "@Chawla28Aarav"],
+    ["Grid.Itch", "PUT_YOUR_ITCHIO_HANDLE"]
+  ]
+}
